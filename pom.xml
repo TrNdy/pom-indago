@@ -101,6 +101,11 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<dependency>
+				<groupId>sc.fiji</groupId>
+				<artifactId>bigdataviewer-core</artifactId>
+				<version>3.0.1</version>
+			</dependency>
 			
 			<!-- OUR STUFF   OUR STUFF   OUR STUFF   OUR STUFF -->
 			
