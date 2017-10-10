@@ -3,11 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>sc.fiji</groupId>
-		<artifactId>pom-fiji</artifactId>
-		<version>26.1.1</version>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>17.1.1</version>
 	</parent>
-
+	
+	<groupId>sc.fiji</groupId>
 	<artifactId>pom-indago</artifactId>
 	<version>1.0.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -16,6 +17,19 @@
 	<description>Parent POM for Indago-based projects. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins (fit for direct Fiji deployment).
 
 Projects wishing to use pom-indago as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;url&gt;, &lt;inceptionYear&gt;, &lt;organization&gt;, &lt;licenses&gt;, &lt;developers&gt;, &lt;scm&gt;, &lt;issueManagement&gt; and &lt;ciManagement&gt; sections.</description>
+	<url>https:github.com/TrNdy/pom-indago</url>
+	<inceptionYear>2016</inceptionYear>
+	<organization>
+		<name>TrNdy</name>
+		<url>https://github.com/TrNdy</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<url>https://opensource.org/licenses/BSD-2-Clause</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<developers>
 		<developer>
@@ -55,37 +69,46 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 			</roles>
 		</developer>
 	</developers>
-	<!-- <contributors>
+	<contributors>
 		<contributor>
-			<name>Stephan Saalfeld</name>
-			<url>http://imagej.net/User:Saalfeld</url>
-			<properties><id>axtimwalde</id></properties>
+			<name>none</name>
 		</contributor>
-	</contributors> -->
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>none</name>
+		</mailingList>
+	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/fjug/pom-indago</connection>
-		<developerConnection>scm:git:git@github.com:fjug/pom-indago</developerConnection>
+		<connection>scm:git:git://github.com/TrNdy/pom-indago</connection>
+		<developerConnection>scm:git:git@github.com:TrNdy/pom-indago</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/fjug/pom-indago</url>
+		<url>https://github.com/TrNdy/pom-indago</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/fjug/pom-indago/issues</url>
+		<url>https://github.com/TrNdy/pom-indago/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Jenkins</system>
-		<url>http://jenkins.imagej.net/job/pom-indago/</url>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/TrNdy/pom-indago</url>
 	</ciManagement>
 
 	<properties>
-		<pom-bigdataviewer.version>4.0.1</pom-bigdataviewer.version>
+		<bigdataviewer-core.version>4.3.0</bigdataviewer-core.version>
+		<bigdataviewer-vistools.version>1.0.0-beta-7</bigdataviewer-vistools.version>
+		<imglib2-ui.version>2.0.0-beta-32</imglib2-ui.version>
+		<imglib2.version>4.5.0</imglib2.version>
 		<imagej-ops.version>0.33.0</imagej-ops.version>
 		<Trainable_Segmentation.version>3.2.1</Trainable_Segmentation.version> <!-- for some reason Java8 update site comes with 3.2.1 (2016-10-22) -->
+
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>TrNdy developers</license.copyrightOwners>
 	</properties>
 
 	<repositories>
-		<!-- NB: for project parent -->
 		<repository>
 			<id>imagej.public</id>
 			<url>http://maven.imagej.net/content/groups/public</url>
@@ -95,16 +118,14 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>pom-bigdataviewer</artifactId>
-				<version>${pom-bigdataviewer.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
+				<groupId>net.trackmate</groupId>
+				<artifactId>trackmate</artifactId>
+				<version>1.0.0-beta-1</version>
 			</dependency>
 			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>bigdataviewer-core</artifactId>
-				<version>3.0.1</version>
+				<groupId>org.scijava</groupId>
+				<artifactId>ui-behaviour</artifactId>
+				<version>1.3.0</version>
 			</dependency>
 			
 			<!-- OUR STUFF   OUR STUFF   OUR STUFF   OUR STUFF -->
@@ -123,16 +144,6 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 				<groupId>com.indago</groupId>
 				<artifactId>IndagoLoggingWrapper</artifactId>
 				<version>0.1.0-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>sc.fiji</groupId>
-				<artifactId>bigdataviewer-vistools</artifactId>
-				<version>1.0.0-beta-4</version>
-			</dependency>
-			<dependency>
-				<groupId>net.trackmate</groupId>
-				<artifactId>trackmate</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
 			</dependency>
 			
 			<!-- Fiji UNIVERSE   Fiji UNIVERSE   Fiji UNIVERSE -->
