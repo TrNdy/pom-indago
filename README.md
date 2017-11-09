@@ -1,3 +1,5 @@
+[![](https://travis-ci.org/TrNdy/pom-indago.svg?branch=master)](https://travis-ci.org/TrNdy/pom-indago)
+
 Maven POM parent for [Indago related projects](https://github.com/fjug/Indago),
 and for projects wishing to inherit the Indago environment.
 [Bill of Materials](http://imagej.net/BOM).
