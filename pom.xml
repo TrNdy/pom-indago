@@ -99,9 +99,8 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 	<properties>
 		<bigdataviewer-core.version>4.3.0</bigdataviewer-core.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-7</bigdataviewer-vistools.version>
-		<imglib2-ui.version>2.0.0-beta-32</imglib2-ui.version>
+		<imglib2-ui.version>2.0.0-beta-33</imglib2-ui.version>
 		<imglib2.version>4.5.0</imglib2.version>
-		<imagej-ops.version>0.33.0</imagej-ops.version>
 		<Trainable_Segmentation.version>3.2.1</Trainable_Segmentation.version> <!-- for some reason Java8 update site comes with 3.2.1 (2016-10-22) -->
 
 		<license.licenseName>bsd_2</license.licenseName>
@@ -212,40 +211,4 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<profiles>
-		<!--
-		This developer profile makes it easy to pin to SNAPSHOT versions.
-		Add an empty dev.indago file in your ~/.scijava directory, and
-		dependencies will automatically update! You may also need to refresh
-		your IDE; e.g., in Eclipse: right click, Maven > Update Project...
-		-->
-		<profile>
-			<id>dev.indago</id>
-			<activation>
-				<file>
-					<exists>${user.home}/.scijava/dev.indago</exists>
-				</file>
-			</activation>
-			<properties>
-				<spim_data.version>LATEST</spim_data.version>
-				<imagej-ops.version>LATEST</imagej-ops.version>
-			</properties>
-			<repositories>
-				<repository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-				</repository>
-			</repositories>
-			<pluginRepositories>
-				<pluginRepository>
-					<id>imagej.public</id>
-					<url>http://maven.imagej.net/content/groups/public</url>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-				</pluginRepository>
-			</pluginRepositories>
-		</profile>
-	</profiles>
 </project>
