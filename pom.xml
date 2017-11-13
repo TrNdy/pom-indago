@@ -141,7 +141,7 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 			<dependency>
 				<groupId>com.indago</groupId>
 				<artifactId>Indago</artifactId>
-				<version>0.1.4</version>
+				<version>0.1.5</version>
 			</dependency>
 			<dependency>
 				<groupId>com.indago</groupId>
@@ -150,28 +150,23 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 			</dependency>
 			<dependency>
 				<groupId>com.indago</groupId>
-				<artifactId>IndagoLoggingWrapper</artifactId>
-				<version>0.2.0</version>
-			</dependency>
-			<dependency>
-				<groupId>com.indago</groupId>
 				<artifactId>tr2d</artifactId>
-				<version>0.1.1</version>
+				<version>0.1.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.indago.tr2d</groupId>
 				<artifactId>Tr2dSegmentationImportPlugin</artifactId>
-				<version>0.1.0</version>
+				<version>0.1.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.indago.tr2d</groupId>
 				<artifactId>Tr2dWekaSegmenterPlugin</artifactId>
-				<version>0.1.0</version>
+				<version>0.1.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.indago.tr2d</groupId>
 				<artifactId>Tr2dRunHernan</artifactId>
-				<version>0.1.0</version>
+				<version>0.1.2</version>
 			</dependency>
 			
 			<!-- Fiji UNIVERSE   Fiji UNIVERSE   Fiji UNIVERSE -->
