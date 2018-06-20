@@ -161,7 +161,7 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 			<dependency>
 				<groupId>com.indago.tr2d</groupId>
 				<artifactId>Tr2dLabkitSegmentationPlugin</artifactId>
-				<version>0.1.0</version>
+				<version>0.1.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.indago.tr2d</groupId>
