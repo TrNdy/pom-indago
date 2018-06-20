@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>19.0.0</version>
+		<version>22.3.0</version>
 	</parent>
 	
 	<groupId>sc.fiji</groupId>
@@ -97,12 +97,7 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 	</ciManagement>
 
 	<properties>
-		<scijava-common.version>2.66.1</scijava-common.version>
-		<bigdataviewer-core.version>4.3.0</bigdataviewer-core.version>
-		<bigdataviewer-vistools.version>1.0.0-beta-7</bigdataviewer-vistools.version>
 		<imglib2-ui.version>2.0.0-beta-33</imglib2-ui.version>
-		<imglib2.version>4.5.0</imglib2.version>
-		<Trainable_Segmentation.version>3.2.1</Trainable_Segmentation.version> <!-- for some reason Java8 update site comes with 3.2.1 (2016-10-22) -->
 
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>TrNdy developers</license.copyrightOwners>
