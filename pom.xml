@@ -136,7 +136,7 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 			<dependency>
 				<groupId>com.indago</groupId>
 				<artifactId>Indago</artifactId>
-				<version>0.1.6</version>
+				<version>0.1.7</version>
 			</dependency>
 			<dependency>
 				<groupId>com.indago</groupId>
@@ -161,14 +161,25 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 			<dependency>
 				<groupId>com.indago.tr2d</groupId>
 				<artifactId>Tr2dLabkitSegmentationPlugin</artifactId>
-				<version>0.1.1</version>
+				<version>0.1.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.indago.tr2d</groupId>
 				<artifactId>Tr2dRunHernan</artifactId>
 				<version>0.1.5</version>
 			</dependency>
-			
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-labkit</artifactId>
+				<version>0.1.11</version>
+				<exclusions>
+					<exclusion>
+						<groupId>hr.irb.fastRandomForest</groupId>
+						<artifactId>fastRandomForest</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+						
 			<!-- Fiji UNIVERSE   Fiji UNIVERSE   Fiji UNIVERSE -->
 			
 	  		<dependency> <!-- needed dependency for trainable weka (dunno why this is not resolved automatically) --> 
