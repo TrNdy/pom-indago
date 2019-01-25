@@ -112,9 +112,9 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 		<Indago.version>0.1.9</Indago.version>
 		<indago-ui-elements.version>0.1.2</indago-ui-elements.version>
 		<tr2d.version>0.1.8</tr2d.version>
-		<Tr2dSegmentationImportPlugin.version>0.1.4</Tr2dSegmentationImportPlugin.version>
-		<Tr2dWekaSegmenterPlugin.version>0.1.4</Tr2dWekaSegmenterPlugin.version>
-		<Tr2dLabkitSegmentationPlugin.version>0.1.8</Tr2dLabkitSegmentationPlugin.version>
+		<IndagoSegmentationImportPlugin.version>0.1.4</IndagoSegmentationImportPlugin.version>
+		<IndagoWekaSegmenterPlugin.version>0.1.4</IndagoWekaSegmenterPlugin.version>
+		<IndagoLabkitSegmentationPlugin.version>0.1.8</IndagoLabkitSegmentationPlugin.version>
 		<Tr2dRunHernan.version>0.1.8</Tr2dRunHernan.version>
 		<imglib2-labkit.version>0.1.15</imglib2-labkit.version>
 		<gurobi-installer.version>0.1.2</gurobi-installer.version>
