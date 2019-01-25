@@ -109,13 +109,13 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 		<trackmate.version>1.0.0-beta-1</trackmate.version>
 		<ui-behaviour.version>1.3.0</ui-behaviour.version>
 		<gurobi-jar.version>7.5.1</gurobi-jar.version>
-		<Indago.version>0.1.9</Indago.version>
+		<Indago.version>0.1.10</Indago.version>
 		<indago-ui-elements.version>0.1.2</indago-ui-elements.version>
-		<tr2d.version>0.1.8</tr2d.version>
+		<tr2d.version>0.1.9</tr2d.version>
 		<IndagoSegmentationImportPlugin.version>0.1.4</IndagoSegmentationImportPlugin.version>
 		<IndagoWekaSegmenterPlugin.version>0.1.4</IndagoWekaSegmenterPlugin.version>
 		<IndagoLabkitSegmentationPlugin.version>0.1.8</IndagoLabkitSegmentationPlugin.version>
-		<Tr2dRunHernan.version>0.1.8</Tr2dRunHernan.version>
+		<Tr2dRunHernan.version>0.1.9</Tr2dRunHernan.version>
 		<imglib2-labkit.version>0.1.15</imglib2-labkit.version>
 		<gurobi-installer.version>0.1.2</gurobi-installer.version>
 	</properties>
