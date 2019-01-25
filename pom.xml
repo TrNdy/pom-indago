@@ -163,19 +163,19 @@ Projects wishing to use pom-indago as a parent project need to override the &lt;
 				<version>${tr2d.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.indago.tr2d</groupId>
-				<artifactId>Tr2dSegmentationImportPlugin</artifactId>
-				<version>${Tr2dSegmentationImportPlugin.version}</version>
+				<groupId>com.indago</groupId>
+				<artifactId>IndagoSegmentationImportPlugin</artifactId>
+				<version>${IndagoSegmentationImportPlugin.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.indago.tr2d</groupId>
-				<artifactId>Tr2dWekaSegmenterPlugin</artifactId>
-				<version>${Tr2dWekaSegmenterPlugin.version}</version>
+				<groupId>com.indago</groupId>
+				<artifactId>IndagoWekaSegmenterPlugin</artifactId>
+				<version>${IndagoWekaSegmenterPlugin.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.indago.tr2d</groupId>
-				<artifactId>Tr2dLabkitSegmentationPlugin</artifactId>
-				<version>${Tr2dLabkitSegmentationPlugin.version}</version>
+				<groupId>com.indago</groupId>
+				<artifactId>IndagoLabkitSegmentationPlugin</artifactId>
+				<version>${IndagoLabkitSegmentationPlugin.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.indago.tr2d</groupId>
